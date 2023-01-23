@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Waste_Food_Management.Models.Submit_Sale_Model>
+
+
+@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+
+
+
+
+    <head>
+
+    <link rel="stylesheet" href="~/css/saleitems.css" asp-append-version="true" /> 
+ </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Main_box_big">
+        @foreach (var item in Model)
+        {
+              <div  class="container" > 
+                      <div class="imgage_inside_box">
+
+                             <img src="~/Images/noprofile.jpg" width=25 height=25 alt="..">
+                       </div>
+                   <div  class="technician_data">  
+                       <div class="One_Technician1"> @Html.DisplayNameFor(model => model.sale_item):
+
+                        @Html.DisplayFor(modelItem => item.sale_item)
+                         </div>
+                       <br>
+                        <div class="One_Technician2"> @Html.DisplayNameFor(model => model.seller.FullName):
+
+
+                        @Html.DisplayFor(modelItem => item.seller.FullName)
+
+                        
+                      
+                          </div>
+                          <div class="One_Technician3">
+                              <br>
+                         <a asp-action="WillBuy" >I will Buy</a>
+                          </div>
+                         <br>
+                              <br>
+                                   <br>
+                                        <br>
+                                             <br>
+                                                  <br>
+
+
+                 </div>
+                 </div>
+
+
+             
+        }
+</div>

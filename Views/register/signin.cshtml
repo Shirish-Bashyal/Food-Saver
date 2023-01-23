@@ -1,0 +1,53 @@
+﻿
+@using Waste_Food_Management.Models
+
+@model RegisterModel
+@{
+
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+
+<head>
+     <link rel="stylesheet" href="~/css/StyleSheet.css" asp-append-version="true" />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+ <form asp-action="signin>
+    class="flex items-center justify-center w-full min-h-screen"
+    style="font-family: 'Poppins', sans-serif"
+  >
+    <div
+      class="border border-[#807c7c] flex justify-center items-center flex-col px-8 py-32 rounded-xl bg-gray-100"
+    >
+      <div class="flex items-center flex-col mb-8">
+        <div class="font-bold text-3xl text-[#385897]">Welcome back</div>
+        <div class="text-[#a19a9a] font-semibold">Log in to your account</div>
+      </div>
+      <div class="flex flex-col space-y-4 mb-12">
+        <input asp-for="Email"
+          type="text"
+          placeholder="Email"
+          class="border-[#2da7ff] placeholder-[#385897] px-4 py-2 rounded-lg"
+        />
+        <input asp-for="Password"
+          type="password"
+          placeholder="Password"
+          class="border-[#2da7ff] placeholder-[#385897] px-4 py-2 rounded-lg"
+        />
+      </div>
+      <div
+        class="flex items-center bg-[#03b52a] w-full justify-center rounded-lg text-white p-2 mb-2"
+      >
+        <button>Log in</button>
+      </div>
+      <div class="text-[#385897] cursor-pointer">
+        <a>Forgot your password?</a>
+      </div>
+    </div>
+  </>
+  </form>

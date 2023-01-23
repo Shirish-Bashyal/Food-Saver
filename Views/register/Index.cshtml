@@ -1,0 +1,32 @@
+﻿
+<head>
+     <link rel="stylesheet" href="~/css/logo_page.css" asp-append-version="true" />
+
+</head>
+
+<div class="all-elements">
+      <div class="profile-big-box">
+        <div class="profile_pic">
+          <img
+            src="~/Images/logo.png"
+            alt="Profile Photo"
+            id="logo"
+            width="80%"
+            height="80%"
+          />
+        </div>
+      </div>
+      <div class="account">
+        <div class="button-login">
+          <label>
+          <a asp-area="" asp-controller="register" asp-action="CreateProfile"class="already-account">Create an account</a>
+
+            @*<button type="submit">Create an acccount</button>*@
+          </label>
+        </div>
+        <div class="form-group">
+            
+          <a asp-area="" asp-controller="register" asp-action="signin"class="already-account">Already have an account?</a>
+        </div>
+      </div>
+    </div>
